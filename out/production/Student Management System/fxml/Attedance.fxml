@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="619.0" prefWidth="1152.0" xmlns="http://javafx.com/javafx/8"
+            fx:controller="main.mainController">
+    <children>
+        <TableView fx:id="tableView2" layoutX="283.0" layoutY="14.0" prefHeight="521.0" prefWidth="908.0">
+            <columns>
+                <TableColumn fx:id="rollno" prefWidth="98.0" text="Roll Number"/>
+                <TableColumn fx:id="name2" prefWidth="93.0" text="Name"/>
+                <TableColumn fx:id="subject1" prefWidth="90.0" text="Subject 1"/>
+                <TableColumn fx:id="subject2" prefWidth="90.0" text="Subject 2"/>
+                <TableColumn fx:id="subject3" prefWidth="90.0" text="Subject 3"/>
+                <TableColumn fx:id="subject4" prefWidth="90.0" text="Subject 4"/>
+                <TableColumn fx:id="subject5" prefWidth="90.0" text="Subject 5"/>
+                <TableColumn fx:id="subject6" prefWidth="90.0" text="Subject 6"/>
+                <TableColumn fx:id="subject7" prefWidth="90.0" text="Subject 7"/>
+                <TableColumn fx:id="subject8" prefWidth="90.0" text="Subject 8"/>
+            </columns>
+        </TableView>
+        <Button layoutX="33.0" layoutY="540.0" mnemonicParsing="false" onAction="#atdloadclicked2" text="Load"/>
+        <ChoiceBox fx:id="choicecrs2" layoutX="33.0" layoutY="57.0" prefWidth="150.0"/>
+        <ChoiceBox fx:id="choicecomb2" layoutX="33.0" layoutY="114.0" prefWidth="150.0"/>
+        <ChoiceBox fx:id="choicesem2" layoutX="33.0" layoutY="166.0" prefWidth="150.0"/>
+    </children>
+</AnchorPane>

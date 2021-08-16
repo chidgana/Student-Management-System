@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<TabPane prefHeight="768.0" prefWidth="1368.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.mainController">
+    <tabs>
+        <Tab text="Student">
+
+
+            <!--suppress XmlDuplicatedId -->
+            <TextField fx:id="txtname" promptText="Name" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" />
+
+            <AnchorPane style="-fx-background-color: #000000;">
+                <children>
+                    <ImageView fitHeight="751.0" fitWidth="1368.0" layoutX="2.0" layoutY="-14.0" nodeOrientation="INHERIT" pickOnBounds="true" smooth="false" style="-fx-opacity: 0;" visible="false">
+                        <image>
+                            <Image url="@../../../../dark_blue_background-wallpaper-1366x768.jpg" />
+                        </image>
+                        <cursor>
+                            <Cursor fx:constant="DEFAULT" />
+                        </cursor>
+                    </ImageView>
+                    <VBox alignment="BOTTOM_LEFT" fillWidth="false" layoutX="-2.0" layoutY="25.0" prefHeight="295.0" prefWidth="312.0" spacing="5">
+                        <padding>
+                            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                        </padding>
+                        <children>
+                            <VBox prefHeight="272.0" prefWidth="289.0" spacing="5.0">
+                                <children>
+                                    <HBox spacing="5.0">
+                                        <children>
+                                            <Label text="Admission Number" textAlignment="JUSTIFY" textFill="WHITE" />
+                                            <TextField fx:id="txtadno" blendMode="SCREEN" promptText="Admission number" />
+                                        </children>
+                                    </HBox>
+                                    <HBox spacing="40.0">
+                                        <children>
+                                            <Label text="Roll Number" textFill="WHITE">
+                                                <font>
+                                                    <Font name="Cambria" size="13.0" />
+                                                </font>
+                                            </Label>
+                                            <TextField fx:id="txtrollno" blendMode="SCREEN" promptText="Roll number" />
+                                        </children>
+                                    </HBox>
+                                    <HBox spacing="75.0">
+                                        <children>
+                                            <Label text="Name" textAlignment="JUSTIFY" textFill="WHITE">
+                                                <font>
+                                                    <Font name="Cambria" size="13.0" />
+                                                </font>
+                                            </Label>
+                                            <TextField fx:id="txtname" promptText="Name" />
+                                        </children>
+                                    </HBox>
+                                    <HBox spacing="38.0">
+                                        <children>
+                                            <Label text="Father Name" textFill="WHITE">
+                                                <font>
+                                                    <Font name="Cambria" size="13.0" />
+                                                </font>
+                                            </Label>
+                                            <TextField fx:id="txtfathername" promptText="Father Name" />
+                                        </children>
+                                    </HBox>
+                                    <HBox spacing="35.0">
+                                        <children>
+                                            <Label text="Mother Name" textFill="WHITE">
+                                                <font>
+                                                    <Font name="Cambria" size="13.0" />
+                                                </font>
+                                            </Label>
+                                            <TextField fx:id="txtmothername" promptText="Mother Name" />
+                                        </children>
+                                    </HBox>
+                                    <HBox spacing="83.0">
+                                        <children>
+                                            <Label text="Age" textFill="WHITE">
+                                                <font>
+                                                    <Font name="Cambria" size="13.0" />
+                                                </font>
+                                            </Label>
+                                            <TextField fx:id="txtage" promptText="Age" />
+                                        </children>
+                                    </HBox>
+                                    <HBox prefHeight="34.0" prefWidth="315.0" spacing="80.0">
+                                        <children>
+                                            <Label text="DOB" textFill="WHITE">
+                                                <font>
+                                                    <Font name="Cambria" size="13.0" />
+                                                </font>
+                                            </Label>
+                                            <TextField fx:id="txtdob" promptText="Date of birth" />
+                                        </children>
+                                    </HBox>
+                                    <HBox prefHeight="34.0" prefWidth="289.0" spacing="65.0">
+                                        <children>
+                                            <Label text="Gender" textFill="WHITE">
+                                                <font>
+                                                    <Font name="Cambria" size="13.0" />
+                                                </font>
+                                            </Label>
+                                            <VBox prefHeight="200.0" prefWidth="100.0">
+                                                <children>
+                                                    <RadioButton fx:id="radiomale" mnemonicParsing="false" text="Male" textFill="WHITE">
+                                                        <toggleGroup>
+                                                            <ToggleGroup fx:id="gendergroup" />
+                                                        </toggleGroup>
+                                                        <font>
+                                                            <Font name="Cambria" size="13.0" />
+                                                        </font>
+                                                    </RadioButton>
+                                                    <RadioButton fx:id="radiofemale" mnemonicParsing="false" text="Female" textFill="WHITE" toggleGroup="$gendergroup">
+                                                        <font>
+                                                            <Font name="Cambria" size="13.0" />
+                                                        </font>
+                                                    </RadioButton>
+                                                </children>
+                                            </VBox>
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                        </children>
+                    </VBox>
+                    <VBox layoutX="649.0" layoutY="492.0" prefHeight="122.0" prefWidth="121.0" spacing="5.0">
+                        <children>
+                            <HBox spacing="5.0" />
+                            <HBox prefHeight="13.0" prefWidth="183.0" spacing="5.0" />
+                        </children>
+                        <padding>
+                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                        </padding>
+                    </VBox>
+                    <MenuButton blendMode="SCREEN" layoutX="1263.0" layoutY="2.0" mnemonicParsing="false" text="More">
+                        <items>
+                            <MenuItem mnemonicParsing="false" onAction="#logoutclicked" text="Logout" />
+                            <MenuItem mnemonicParsing="false" onAction="#exitbuttonclicked" text="Exit" />
+                            <MenuItem mnemonicParsing="false" onAction="#adduserclicked" text="Adduser" />
+                        </items>
+                    </MenuButton>
+                    <HBox layoutX="645.0" layoutY="637.0" prefHeight="24.0" prefWidth="473.0" spacing="10.0">
+                        <children>
+                            <Button fx:id="btninsert" blendMode="SCREEN" mnemonicParsing="false" onAction="#insertnewstudent" text="Insert" />
+                            <Button blendMode="SCREEN" mnemonicParsing="false" onAction="#deletestudent" text="delete" />
+                            <Button fx:id="btnstudent" blendMode="SCREEN" mnemonicParsing="false" onAction="#updatestudent" text="Update" />
+                            <Button blendMode="SCREEN" mnemonicParsing="false" onAction="#photoupdateclicked" text="Update Photos" />
+                            <Button blendMode="SCREEN" mnemonicParsing="false" onAction="#viewbtnclicked" text="View Photos" />
+                            <Button blendMode="SCREEN" mnemonicParsing="false" onAction="#clearfieldclicked" text="Clear Fileds" />
+                        </children>
+                        <padding>
+                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                        </padding>
+                    </HBox>
+                    <TableView fx:id="tableView" blendMode="SCREEN" layoutX="598.0" layoutY="92.0" onMouseClicked="#tableclicked" prefHeight="481.0" prefWidth="732.0">
+                        <columns>
+                            <TableColumn fx:id="admissionnumber" prefWidth="117.0" text="Admission number" />
+                            <TableColumn fx:id="registernumber" prefWidth="99.0" text="Register number" />
+                            <TableColumn fx:id="name" prefWidth="68.0" text="Name" />
+                            <TableColumn fx:id="dateofbirth" prefWidth="93.0" text="Date of Birth" />
+                            <TableColumn fx:id="phonenumber" prefWidth="101.0" text="Phone number" />
+                            <TableColumn fx:id="email" minWidth="0.0" prefWidth="109.0" text="Email" />
+                            <TableColumn fx:id="course" prefWidth="61.0" text="Course" />
+                            <TableColumn fx:id="semester" prefWidth="84.0" text="Semester" />
+                        </columns>
+                    </TableView>
+                    <TextField fx:id="txtsearch" layoutX="598.0" layoutY="27.0" onKeyReleased="#searchbtnlicked" promptText="Search Table" />
+                    <Label layoutX="11.0" layoutY="6.0" text="Basic Details" textFill="WHITE">
+                        <font>
+                            <Font name="Cambria Bold" size="13.0" />
+                        </font>
+                    </Label>
+                    <Label layoutX="14.0" layoutY="311.0" text="Contact Details" textFill="WHITE">
+                        <font>
+                            <Font name="System Bold" size="13.0" />
+                        </font>
+                    </Label>
+                    <Label layoutX="11.0" layoutY="524.0" text="Other Details" textFill="WHITE">
+                        <font>
+                            <Font name="Cambria Bold" size="13.0" />
+                        </font>
+                    </Label>
+                    <ImageView fx:id="newimage" fitHeight="184.0" fitWidth="165.0" layoutX="386.0" layoutY="6.0" pickOnBounds="true" />
+                    <Label layoutX="328.0" layoutY="648.0" />
+                    <Separator layoutX="3.0" layoutY="307.0" prefHeight="9.0" prefWidth="589.0" />
+                    <VBox layoutX="11.0" layoutY="339.0" prefHeight="168.0" prefWidth="323.0" spacing="5.0">
+                        <children>
+                            <HBox prefHeight="150.0" prefWidth="325.0" spacing="60.0">
+                                <children>
+                                    <Label text="Address" textFill="WHITE">
+                                        <font>
+                                            <Font name="Cambria" size="13.0" />
+                                        </font>
+                                    </Label>
+                                    <VBox prefHeight="66.0" prefWidth="174.0" spacing="5.0">
+                                        <children>
+                                            <TextArea fx:id="txtaddpermanent" prefHeight="64.0" prefWidth="174.0" promptText="Permanent Address" />
+                                            <TextArea fx:id="txtaddcorresponding" prefHeight="74.0" prefWidth="174.0" promptText="Corresponding Address" />
+                                        </children>
+                                    </VBox>
+                                </children>
+                            </HBox>
+                        </children>
+                    </VBox>
+                    <VBox layoutX="7.0" layoutY="543.0" prefHeight="202.0" prefWidth="311.0" spacing="5.0">
+                        <children>
+                            <HBox prefHeight="29.0" prefWidth="233.0" spacing="67.0">
+                                <children>
+                                    <Label text="Income" textFill="WHITE">
+                                        <font>
+                                            <Font name="Cambria" size="13.0" />
+                                        </font>
+                                    </Label>
+                                    <TextField fx:id="txtincome" promptText="Annual income" />
+                                </children>
+                            </HBox>
+                            <HBox spacing="77.0">
+                                <children>
+                                    <Label text="Caste" textFill="WHITE">
+                                        <font>
+                                            <Font name="Cambria" size="13.0" />
+                                        </font>
+                                    </Label>
+                                    <TextField fx:id="txtcaste" promptText="Caste " />
+                                </children>
+                            </HBox>
+                            <HBox spacing="58.0">
+                                <children>
+                                    <Label text="Category" textFill="WHITE">
+                                        <font>
+                                            <Font name="Cambria" size="13.0" />
+                                        </font>
+                                    </Label>
+                                    <TextField fx:id="txtcategory" promptText="Category" />
+                                </children>
+                            </HBox>
+                            <HBox spacing="5.0">
+                                <children>
+                                    <Label text="Previous Institution" textFill="WHITE">
+                                        <font>
+                                            <Font name="Cambria" size="13.0" />
+                                        </font>
+                                    </Label>
+                                    <TextField fx:id="txtinstitution" promptText="Previous Institution" />
+                                </children>
+                            </HBox>
+                        </children>
+                    </VBox>
+                    <VBox layoutX="337.0" layoutY="543.0" prefHeight="175.0" prefWidth="242.0" spacing="5.0">
+                        <children>
+                            <HBox spacing="40.0">
+                                <children>
+                                    <Label text="Course" textFill="WHITE">
+                                        <font>
+                                            <Font name="Cambria" size="13.0" />
+                                        </font>
+                                    </Label>
+                                    <ChoiceBox fx:id="choicecrs" blendMode="SCREEN" prefWidth="150.0" />
+                                </children>
+                            </HBox>
+                            <HBox spacing="8.0">
+                                <children>
+                                    <Label text="Combination" textFill="WHITE">
+                                        <font>
+                                            <Font name="Cambria" size="13.0" />
+                                        </font>
+                                    </Label>
+                                    <ChoiceBox fx:id="choicecomb" blendMode="SCREEN" prefWidth="150.0" />
+                                </children>
+                            </HBox>
+                            <HBox spacing="28.0">
+                                <children>
+                                    <Label text="Semester" textFill="WHITE">
+                                        <font>
+                                            <Font name="Cambria" size="13.0" />
+                                        </font>
+                                    </Label>
+                                    <ChoiceBox fx:id="choicesem" blendMode="SCREEN" prefWidth="150.0" />
+                                </children>
+                            </HBox>
+                            <HBox>
+                                <children>
+                                    <Label text="Extra curricular" textFill="WHITE">
+                                        <font>
+                                            <Font name="Cambria" size="13.0" />
+                                        </font>
+                                    </Label>
+                                    <TextField fx:id="txtcarri" promptText="Extra curricular" />
+                                </children>
+                            </HBox>
+                        </children>
+                    </VBox>
+                    <Separator layoutX="5.0" layoutY="512.0" prefHeight="1.0" prefWidth="589.0" />
+                    <Button fx:id="btnload" blendMode="SCREEN" layoutX="598.0" layoutY="67.0" mnemonicParsing="false" onAction="#loadbtnclk" text="Load Table" textAlignment="CENTER" textFill="#0d0d0d" wrapText="true">
+                        <cursor>
+                            <Cursor fx:constant="HAND" />
+                        </cursor>
+                    </Button>
+                    <Separator layoutX="586.0" layoutY="-28.0" orientation="VERTICAL" prefHeight="1121.0" prefWidth="12.0" />
+                    <VBox layoutX="384.0" layoutY="199.0" prefHeight="117.0" prefWidth="189.0" spacing="10.0">
+                        <children>
+                            <HBox spacing="20.0">
+                                <children>
+                                    <Label text="Student photo" textFill="WHITE">
+                                        <font>
+                                            <Font name="Cambria" size="13.0" />
+                                        </font>
+                                    </Label>
+                                    <Button fx:id="btnbrow3" blendMode="SCREEN" mnemonicParsing="false" onAction="#browsebtnclicked3" text="Browse" />
+                                </children>
+                            </HBox>
+                            <HBox spacing="1.0">
+                                <children>
+                                    <Label prefHeight="19.0" prefWidth="96.0" text="SSLC Markscard" textFill="WHITE">
+                                        <font>
+                                            <Font name="Cambria" size="13.0" />
+                                        </font>
+                                    </Label>
+                                    <Button fx:id="btnbrow1" blendMode="SCREEN" mnemonicParsing="false" onAction="#browsebtnclicked1" text="Browse" />
+                                </children>
+                            </HBox>
+                            <HBox spacing="16.0">
+                                <children>
+                                    <Label text="PUC Markscard" textFill="WHITE">
+                                        <font>
+                                            <Font name="Cambria" size="13.0" />
+                                        </font>
+                                    </Label>
+                                    <Button fx:id="btnbrow2" blendMode="SCREEN" mnemonicParsing="false" onAction="#browsebtnclicked2" text="Browse" />
+                                </children>
+                            </HBox>
+                        </children>
+                    </VBox>
+                    <Button blendMode="SCREEN" layoutX="1134.0" layoutY="642.0" mnemonicParsing="false" onAction="#addSubjectClicked" text="Add Subjects" />
+                    <VBox layoutX="318.0" layoutY="349.0" prefHeight="148.0" prefWidth="255.0" spacing="10.0">
+                        <children>
+                            <HBox spacing="57.0">
+                                <children>
+                                    <Label prefHeight="17.0" prefWidth="42.0" text="Email" textFill="WHITE">
+                                        <padding>
+                                            <Insets left="5.0" />
+                                        </padding>
+                                        <font>
+                                            <Font name="Cambria" size="13.0" />
+                                        </font>
+                                    </Label>
+                                    <TextField fx:id="txtemail" promptText="E-mail" />
+                                </children>
+                            </HBox>
+                            <HBox spacing="50.0">
+                                <children>
+                                    <Label prefHeight="17.0" prefWidth="49.0" text=" Number" textFill="WHITE">
+                                        <font>
+                                            <Font name="Cambria" size="13.0" />
+                                        </font>
+                                    </Label>
+                                    <VBox spacing="10.0">
+                                        <children>
+                                            <TextField fx:id="txtstudentph" prefHeight="25.0" prefWidth="150.0" promptText="Student phone number" />
+                                            <TextField fx:id="txtparentph" prefHeight="25.0" prefWidth="149.0" promptText="Parent phone number" />
+                                        </children>
+                                    </VBox>
+                                </children>
+                            </HBox>
+                        </children>
+                    </VBox>
+                </children>
+            </AnchorPane>
+        </Tab>
+        <Tab text="Attendance">
+            <content>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000000;">
+                    <children>
+                        <MenuButton blendMode="SCREEN" layoutX="1264.0" layoutY="14.0" mnemonicParsing="false" text="More">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#logoutclicked" text="Logout" />
+                                <MenuItem mnemonicParsing="false" onAction="#exitbuttonclicked" text="Exit" />
+                            </items>
+                        </MenuButton>
+                        <HBox layoutX="61.0" layoutY="152.0" spacing="40.0" />
+                        <HBox layoutX="51.0" layoutY="189.0" spacing="8.0" />
+                        <VBox layoutX="14.0" layoutY="52.0" prefHeight="201.0" prefWidth="273.0" spacing="15.0">
+                            <children>
+                                <HBox spacing="15.0" />
+                                <HBox spacing="44.0">
+                                    <children>
+                                        <Label text="Course" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <ChoiceBox fx:id="choicecrs1" prefWidth="150.0" />
+                                    </children>
+                                </HBox>
+                                <HBox spacing="12.0">
+                                    <children>
+                                        <Label text="Combination" textFill="#fffbfb">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <ChoiceBox fx:id="choicecomb1" prefWidth="150.0" />
+                                    </children>
+                                </HBox>
+                                <HBox spacing="31.0">
+                                    <children>
+                                        <Label text="Semester" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <ChoiceBox fx:id="choicesem1" prefWidth="150.0" />
+                                    </children>
+                                </HBox>
+                                <Button blendMode="SCREEN" mnemonicParsing="false" onAction="#atdloadclicked" text="Load Table" />
+                            </children>
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                        </VBox>
+                        <TableView fx:id="tableView1" blendMode="SCREEN" editable="true" layoutX="488.0" layoutY="60.0" prefHeight="489.0" prefWidth="896.0">
+                            <columns>
+                                <TableColumn fx:id="Rollno" prefWidth="123.0" text="Roll Number" />
+                                <TableColumn fx:id="name1" prefWidth="123.0" text="Name" />
+                                <TableColumn fx:id="Subject1" prefWidth="95.0" text="Subject1" />
+                                <TableColumn fx:id="Subject2" minWidth="6.0" prefWidth="82.0" text="Subject2" />
+                                <TableColumn fx:id="Subject3" minWidth="0.0" prefWidth="73.0" text="Subject3" />
+                                <TableColumn fx:id="Subject4" minWidth="2.0" prefWidth="77.0" text="Subject4" />
+                                <TableColumn fx:id="Subject5" minWidth="0.0" prefWidth="75.0" text="Subject5" />
+                                <TableColumn fx:id="Subject6" minWidth="0.0" prefWidth="75.0" text="Subject6" />
+                                <TableColumn fx:id="Subject7" minWidth="0.0" prefWidth="75.0" text="Subject7" />
+                                <TableColumn fx:id="Subject8" minWidth="0.0" prefWidth="97.0" text="Subject8" />
+                            </columns>
+                        </TableView>
+                        <Separator layoutX="423.0" layoutY="-3.0" orientation="VERTICAL" prefHeight="739.0" prefWidth="0.0" />
+                        <Button blendMode="SCREEN" layoutX="24.0" layoutY="269.0" mnemonicParsing="false" onAction="#updateattendance" text="Update" />
+                        <Button blendMode="SCREEN" layoutX="25.0" layoutY="345.0" mnemonicParsing="false" onAction="#atdcaculateclicked" text="View" />
+
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="Exam">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #000000;">
+                    <children>
+                        <MenuButton blendMode="SCREEN" layoutX="1299.0" layoutY="2.0" mnemonicParsing="false" text="More">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#logoutclicked" text="Logout" />
+                                <MenuItem mnemonicParsing="false" onAction="#exitbuttonclicked" text="Exit" />
+                            </items>
+                        </MenuButton>
+                        <Label contentDisplay="BOTTOM" layoutX="16.0" layoutY="132.0" prefHeight="13.0" prefWidth="154.0" text="Internals Marks" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" underline="true">
+                            <font>
+                                <Font name="Algerian" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="413.0" layoutY="154.0" prefHeight="19.0" prefWidth="135.0" text="Semester Marks" textFill="WHITE">
+                            <font>
+                                <Font name="Algerian" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label layoutY="496.0" prefHeight="19.0" prefWidth="115.0" text="Lab Marks" textFill="WHITE">
+                            <font>
+                                <Font name="Algerian" size="16.0" />
+                            </font>
+                        </Label>
+                        <VBox layoutX="16.0" layoutY="15.0" prefHeight="100.0" prefWidth="273.0" spacing="10.0">
+                            <children>
+                                <HBox spacing="8.0">
+                                    <children>
+                                        <Label text="Register Number" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <TextField fx:id="txtregno" promptText="Register Number" />
+                                    </children>
+                                </HBox>
+                                <HBox spacing="65.0">
+                                    <children>
+                                        <Label text="Rollno" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <TextField fx:id="txtrollno2" promptText="Rollno" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <VBox layoutX="58.0" layoutY="524.0" prefHeight="154.0" prefWidth="222.0" spacing="10.0">
+                            <children>
+                                <HBox spacing="10.0">
+                                    <children>
+                                        <Label text="Subject1" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <TextField fx:id="sempract1" promptText="Practicle 1" />
+                                    </children>
+                                </HBox>
+                                <HBox spacing="10.0">
+                                    <children>
+                                        <Label text="Subject2" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <TextField fx:id="sempract2" promptText="Practicle 2" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="25.0" prefWidth="192.0" spacing="10.0">
+                                    <children>
+                                        <Label text="Subject3" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <TextField fx:id="sempract3" promptText="Practicle 3" />
+                                    </children>
+                                </HBox>
+                                <HBox spacing="10.0">
+                                    <children>
+                                        <Label text="Subject4" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <TextField fx:id="sempract4" promptText="Practicle 4" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <Separator layoutX="728.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="751.0" prefWidth="4.0" />
+                        <Button blendMode="SCREEN" layoutX="480.0" layoutY="529.0" mnemonicParsing="false" onAction="#examInsertClicked" text="Insert" />
+                        <VBox layoutX="755.0" layoutY="506.0" spacing="10.0">
+                            <children>
+                                <HBox spacing="40.0">
+                                    <children>
+                                        <Label text="Course" textFill="#fffefe" />
+                                        <ChoiceBox fx:id="choicecrs3" prefWidth="150.0" />
+                                    </children>
+                                </HBox>
+                                <HBox spacing="8.0">
+                                    <children>
+                                        <Label text="Combination" textFill="#fffefe" />
+                                        <ChoiceBox fx:id="choicecomb3" prefWidth="150.0" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="17.0" prefWidth="191.0" spacing="29.0">
+                                    <children>
+                                        <Label text="Semester" textFill="#fffefe" />
+                                        <ChoiceBox fx:id="choicesem3" prefWidth="150.0" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <VBox layoutX="480.0" layoutY="179.0" prefHeight="285.0" prefWidth="233.0" spacing="10.0">
+                            <children>
+                                <HBox prefHeight="27.0" prefWidth="200.0" spacing="10.0">
+                                    <children>
+                                        <Label text="Subject1" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <TextField fx:id="semsub1" promptText="Subject1" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="27.0" prefWidth="200.0" spacing="10.0">
+                                    <children>
+                                        <Label text="Subject2" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <TextField fx:id="semsub2" promptText="Subject2" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="27.0" prefWidth="200.0" spacing="10.0">
+                                    <children>
+                                        <Label text="Subject3" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <TextField fx:id="semsub3" promptText="Subject3" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="27.0" prefWidth="200.0" spacing="10.0">
+                                    <children>
+                                        <Label text="Subject4" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <TextField fx:id="semsub4" promptText="Subject4" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="27.0" prefWidth="200.0" spacing="10.0">
+                                    <children>
+                                        <Label text="Subject5" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <TextField fx:id="semsub5" promptText="Subject5" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="27.0" prefWidth="200.0" spacing="10.0">
+                                    <children>
+                                        <Label text="Subject6" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <TextField fx:id="semsub6" promptText="Subject6" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="27.0" prefWidth="200.0" spacing="10.0">
+                                    <children>
+                                        <Label text="Subject7" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <TextField fx:id="semsub7" promptText="Subject7" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="27.0" prefWidth="200.0" spacing="10.0">
+                                    <children>
+                                        <Label text="Subject8" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <TextField fx:id="semsub8" promptText="Subject8" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <Button blendMode="SCREEN" layoutX="836.0" layoutY="625.0" mnemonicParsing="false" onAction="#examLoadClicked" text="Load" />
+                        <Button blendMode="SCREEN" layoutX="566.0" layoutY="529.0" mnemonicParsing="false" onAction="#examUpdateClicked" text="Update" />
+                        <Button blendMode="SCREEN" layoutX="651.0" layoutY="529.0" mnemonicParsing="false" onAction="#examDeleteClicked" text="Delete" />
+                        <VBox layoutX="67.0" layoutY="179.0" prefHeight="311.0" prefWidth="246.0" spacing="10.0">
+                            <children>
+                                <HBox prefHeight="27.0" prefWidth="200.0" spacing="10.0">
+                                    <children>
+                                        <Label text="Subject1" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <TextField fx:id="Isub1" promptText="Subject1" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="27.0" prefWidth="200.0" spacing="10.0">
+                                    <children>
+                                        <Label text="Subject2" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <TextField fx:id="Isub2" promptText="Subject2" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="27.0" prefWidth="200.0" spacing="10.0">
+                                    <children>
+                                        <Label text="Subject3" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <TextField fx:id="Isub3" promptText="Subject3" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="27.0" prefWidth="200.0" spacing="10.0">
+                                    <children>
+                                        <Label text="Subject4" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <TextField fx:id="Isub4" promptText="Subject4" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="27.0" prefWidth="200.0" spacing="10.0">
+                                    <children>
+                                        <Label text="Subject5" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <TextField fx:id="Isub5" promptText="Subject5" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="27.0" prefWidth="200.0" spacing="10.0">
+                                    <children>
+                                        <Label text="Subject6" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <TextField fx:id="Isub6" promptText="Subject6" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="27.0" prefWidth="200.0" spacing="10.0">
+                                    <children>
+                                        <Label text="Subject7" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <TextField fx:id="Isub7" promptText="Subject7" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="27.0" prefWidth="200.0" spacing="10.0">
+                                    <children>
+                                        <Label text="Subject8" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font></Label>
+                                        <TextField fx:id="Isub8" promptText="Subject8" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <Separator layoutY="124.0" prefHeight="8.0" prefWidth="730.0" />
+                        <Separator layoutX="364.0" layoutY="128.0" orientation="VERTICAL" prefHeight="615.0" prefWidth="6.0" />
+                        <TableView fx:id="tableview4" blendMode="SCREEN" cacheHint="SPEED" depthTest="ENABLE" editable="true" layoutX="732.0" layoutY="38.0" onMouseClicked="#examTableClicked" prefHeight="444.0" prefWidth="628.0" scaleShape="false">
+                            <columns>
+                                <TableColumn fx:id="name3" prefWidth="109.0" text="Name" />
+                                <TableColumn fx:id="regno" prefWidth="115.0" text="Register Number" />
+                                <TableColumn fx:id="semappeared" prefWidth="90.0" text="Sem Appeared" />
+                                <TableColumn fx:id="year" prefWidth="83.0" text="Month/Year" />
+                                <TableColumn fx:id="total" prefWidth="71.0" text="Total" />
+                                <TableColumn fx:id="percentage" prefWidth="82.0" text="Percentage" />
+                                <TableColumn fx:id="grade" prefWidth="77.0" text="Grade" />
+                            </columns>
+                        </TableView>
+                        <Separator layoutX="-16.0" layoutY="485.0" prefHeight="8.0" prefWidth="730.0" />
+                  <VBox layoutX="399.0" layoutY="14.0" prefHeight="76.0" prefWidth="278.0" spacing="10.0">
+                     <children>
+                                <HBox spacing="5.0">
+                                    <children>
+                                        <Label prefHeight="17.0" prefWidth="95.0" text="Sem Appeared" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font>
+                              </Label>
+                                        <TextField fx:id="txtsemappeared" promptText="Sem Appeared" />
+                                    </children>
+                                </HBox>
+                                <HBox spacing="30.0">
+                                    <children>
+                                        <Label text="Month/Year" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="13.0" />
+                                 </font>
+                              </Label>
+                                        <TextField fx:id="txtmonth" promptText="Month/Year" />
+                                    </children>
+                                </HBox>
+                     </children>
+                  </VBox>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="Report">
+            <content>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #000000;">
+                    <children>
+                        <MenuButton blendMode="SCREEN" layoutX="1300.0" layoutY="8.0" mnemonicParsing="false" text="More">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#logoutclicked" text="Logout" />
+                                <MenuItem mnemonicParsing="false" onAction="#exitbuttonclicked" text="Exit" />
+                            </items>
+                        </MenuButton>
+                        <TableView fx:id="tableview5" blendMode="SCREEN" layoutX="565.0" layoutY="114.0" prefHeight="527.0" prefWidth="735.0">
+                            <columns>
+                                <TableColumn fx:id="name5" prefWidth="75.0" text="Name" />
+                                <TableColumn fx:id="rollno5" prefWidth="90.0" text="Roll Number" />
+                                <TableColumn fx:id="regno5" prefWidth="110.0" text="Register Number" />
+                                <TableColumn fx:id="phone5" prefWidth="104.0" text="Phone Number" />
+                                <TableColumn fx:id="email5" prefWidth="97.0" text="Email" />
+                                <TableColumn fx:id="course5" prefWidth="90.0" text="Course" />
+                                <TableColumn fx:id="comb5" prefWidth="92.0" text="Combination" />
+                                <TableColumn fx:id="sem5" prefWidth="75.0" text="Semester" />
+                            </columns>
+                        </TableView>
+                        <VBox layoutX="33.0" layoutY="89.0" prefHeight="139.0" prefWidth="227.0" spacing="10.0">
+                            <children>
+                                <HBox spacing="40.0">
+                                    <children>
+                                        <Label text="Course" textFill="WHITE" />
+                                        <ChoiceBox fx:id="choicecrs32" prefWidth="150.0" />
+                                    </children>
+                                </HBox>
+                                <HBox spacing="8.0">
+                                    <children>
+                                        <Label text="Combination" textFill="WHITE" />
+                                        <ChoiceBox fx:id="choicecomb32" prefWidth="150.0" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="17.0" prefWidth="191.0" spacing="29.0">
+                                    <children>
+                                        <Label text="Semester" textFill="WHITE" />
+                                        <ChoiceBox fx:id="choicesem32" prefWidth="150.0" />
+                                    </children>
+                                </HBox>
+                                <Button blendMode="SCREEN" mnemonicParsing="false" onAction="#reportLoadClicked" text="Load" />
+                            </children>
+                        </VBox>
+                        <TextField fx:id="txtsearch1" layoutX="565.0" layoutY="64.0" onKeyReleased="#reportSearchClicked" prefHeight="25.0" prefWidth="189.0" promptText="Search" />
+                        <RadioButton fx:id="radattedance" layoutX="32.0" layoutY="288.0" mnemonicParsing="false" text="Attedance" textFill="WHITE">
+                            <toggleGroup>
+                                <ToggleGroup fx:id="reportgroup" />
+                            </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="radaexam" layoutX="34.0" layoutY="329.0" mnemonicParsing="false" text="Exam" textFill="WHITE" toggleGroup="$reportgroup" />
+                        <Button blendMode="SCREEN" layoutX="26.0" layoutY="378.0" mnemonicParsing="false" onAction="#reportGenerateClicked" text="Generate" />
+                        <Separator layoutX="468.0" layoutY="-3.0" orientation="VERTICAL" prefHeight="740.0" prefWidth="12.0" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="SMS">
+            <content>
+                <AnchorPane>
+                    <children>
+                  <Pane layoutX="14.0" prefHeight="739.0" prefWidth="1368.0" style="-fx-background-color: #343434;" />
+                  <Pane layoutX="893.0" layoutY="79.0" prefHeight="446.0" prefWidth="463.0" style="-fx-background-color: #2948FF;" visible="false">
+                     <children>
+                        <JFXTextArea fx:id="txtfmessage" layoutX="54.0" layoutY="170.0" prefHeight="132.0" prefWidth="390.0" />
+                        <JFXTextField fx:id="txtsender" layoutX="174.0" layoutY="29.0" text="TXTLCL" />
+                        <JFXRadioButton fx:id="radiostudent" layoutX="181.0" layoutY="83.0" text="Student" />
+                        <JFXRadioButton fx:id="radioparent" layoutX="181.0" layoutY="127.0" text="Parent" />
+                        <JFXButton layoutX="365.0" layoutY="350.0" onAction="#sendBtnclicked" text="Send" />
+                     </children>
+                  </Pane>
+                        <TableView fx:id="tableview7" layoutX="21.0" layoutY="206.0" prefHeight="387.0" prefWidth="753.0">
+                            <columns>
+                                <TableColumn fx:id="name4" prefWidth="75.0" text="Name" />
+                                <TableColumn fx:id="rollno8" prefWidth="85.0" text="Roll Number" />
+                                <TableColumn fx:id="subj1" prefWidth="65.0" text="Subject 1" />
+                                <TableColumn fx:id="subj2" prefWidth="65.0" text="Subject 2" />
+                                <TableColumn fx:id="subj3" prefWidth="65.0" text="Subject 3" />
+                                <TableColumn fx:id="subj4" prefWidth="65.0" text="Subject 4" />
+                                <TableColumn fx:id="subj5" prefWidth="65.0" text="Subject 5" />
+                                <TableColumn fx:id="subj6" prefWidth="65.0" text="Subject 6" />
+                                <TableColumn fx:id="subj7" prefWidth="65.0" text="Subject 7" />
+                                <TableColumn fx:id="subj8" prefWidth="65.0" text="Subject 8" />
+                                <TableColumn fx:id="select" prefWidth="75.0" text="Select" />
+                            </columns>
+                        </TableView>
+                        <VBox layoutX="32.0" layoutY="49.0" spacing="10.0">
+                            <children>
+                                <HBox spacing="40.0">
+                                    <children>
+                                        <Label text="Course" textFill="WHITE" />
+                              <JFXComboBox fx:id="choicecrs31" />
+                                    </children>
+                                </HBox>
+                                <HBox spacing="8.0">
+                                    <children>
+                                        <Label text="Combination" textFill="WHITE" />
+                              <JFXComboBox fx:id="choicecomb31" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="17.0" prefWidth="191.0" spacing="29.0">
+                                    <children>
+                                        <Label text="Semester" textFill="WHITE" />
+                              <JFXComboBox fx:id="choicesem31" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <Separator layoutX="809.0" layoutY="6.0" orientation="VERTICAL" prefHeight="732.0" prefWidth="13.0" />
+                        <MenuButton layoutX="1300.0" layoutY="2.0" mnemonicParsing="false" text="More">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#logoutclicked" text="Logout" />
+                                <MenuItem mnemonicParsing="false" onAction="#exitbuttonclicked" text="Exit" />
+                            </items>
+                        </MenuButton>
+                        <Label layoutX="899.0" layoutY="110.0" text="Sender" />
+                        <Label layoutX="899.0" layoutY="183.0" text="Phone number" />
+                        <Label layoutX="899.0" layoutY="248.0" text="Message" />
+                  <JFXButton layoutX="57.0" layoutY="171.0" onAction="#smsLoadClicked" text="Load" textFill="WHITE" />
+                  <JFXButton layoutX="427.0" layoutY="171.0" onAction="#smsSendClicked" text="Send" />
+                  <JFXRadioButton fx:id="radioattendance" layoutX="154.0" layoutY="174.0" text="Attendance " textFill="WHITE" />
+                  <JFXRadioButton fx:id="radioexam" layoutX="271.0" layoutY="175.0" text="Exam" textFill="WHITE" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="503.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/8"
+            fx:controller="main.Subjects">
+    <children>
+        <Label layoutX="21.0" layoutY="45.0" text="Course"/>
+        <Label layoutX="21.0" layoutY="94.0" text="Combination"/>
+        <Label layoutX="21.0" layoutY="146.0" text="Semester"/>
+        <VBox layoutX="362.0" layoutY="37.0" prefHeight="340.0" prefWidth="287.0" spacing="10.0">
+            <children>
+                <HBox prefHeight="33.0" prefWidth="247.0" spacing="30.0">
+                    <children>
+                        <Label text="Course ID"/>
+                        <TextField fx:id="txtcrsid"/>
+                    </children>
+                </HBox>
+                <HBox prefHeight="33.0" prefWidth="200.0" spacing="30.0">
+                    <children>
+                        <Label text="Subject 1"/>
+                        <TextField fx:id="txtsub1"/>
+                    </children>
+                </HBox>
+                <HBox prefHeight="33.0" prefWidth="200.0" spacing="30.0">
+                    <children>
+                        <Label text="Subject 2"/>
+                        <TextField fx:id="txtsub2"/>
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="43.0" prefHeight="33.0" prefWidth="200.0" spacing="30.0">
+                    <children>
+                        <Label text="Subject 3"/>
+                        <TextField fx:id="txtsub3"/>
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="76.0" prefHeight="33.0" prefWidth="200.0" spacing="30.0">
+                    <children>
+                        <Label text="Subject 4"/>
+                        <TextField fx:id="txtsub4"/>
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="109.0" prefHeight="33.0" prefWidth="200.0" spacing="30.0">
+                    <children>
+                        <Label text="Subject 5"/>
+                        <TextField fx:id="txtsub5"/>
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="142.0" prefHeight="33.0" prefWidth="200.0" spacing="30.0">
+                    <children>
+                        <Label text="Subject 6"/>
+                        <TextField fx:id="txtsub6"/>
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="175.0" prefHeight="33.0" prefWidth="200.0" spacing="30.0">
+                    <children>
+                        <Label text="Subject 7"/>
+                        <TextField fx:id="txtsub7"/>
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="181.0" prefHeight="33.0" prefWidth="200.0" spacing="30.0">
+                    <children>
+                        <Label text="Subject 8"/>
+                        <TextField fx:id="txtsub8"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <Button layoutX="14.0" layoutY="195.0" mnemonicParsing="false" onAction="#subjectLoadClicked" text="Load"/>
+        <Button layoutX="419.0" layoutY="383.0" mnemonicParsing="false" onAction="#insertSubjectClicked" text="Insert"/>
+        <Button layoutX="533.0" layoutY="383.0" mnemonicParsing="false" onAction="#updateSubjectClicked" text="Update"/>
+        <ChoiceBox fx:id="choicecrs10" layoutX="109.0" layoutY="41.0" prefWidth="150.0"/>
+        <ChoiceBox fx:id="choicecomb10" layoutX="109.0" layoutY="90.0" prefWidth="150.0"/>
+        <ChoiceBox fx:id="choicesem10" layoutX="109.0" layoutY="142.0" prefWidth="150.0"/>
+    </children>
+</AnchorPane>

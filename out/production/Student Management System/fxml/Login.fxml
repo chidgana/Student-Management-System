@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="378.0" prefWidth="401.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Login">
+    <children>
+        <ImageView fitHeight="238.0" fitWidth="401.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../icons/background.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="btnlogin" layoutX="178.0" layoutY="237.0" mnemonicParsing="false" onAction="#loginClicked" text="Login" />
+        <TextField fx:id="txtuid" layoutX="126.0" layoutY="151.0" promptText="Username" />
+        <PasswordField fx:id="txtpwd" layoutX="126.0" layoutY="189.0" promptText="Password" />
+        <Label fx:id="lblmsg" layoutX="31.0" layoutY="300.0" prefHeight="23.0" prefWidth="300.0" textFill="#e80606" />
+        <Label layoutX="41.0" layoutY="20.0" prefHeight="60.0" prefWidth="319.0" text="STUDENT MANAGEMENT SYSTEM" textAlignment="CENTER" textFill="#173565"
+               textOverrun="CENTER_ELLIPSIS">
+            <font>
+                <Font name="Comic Sans MS Bold Italic" size="18.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="71.0" fitWidth="124.0" layoutX="165.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../icons/Student.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

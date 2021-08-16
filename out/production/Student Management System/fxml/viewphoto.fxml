@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8"
+            fx:controller="main.mainController">
+    <children>
+        <ImageView fx:id="imageView" fitHeight="598.0" fitWidth="587.0" layoutX="9.0" layoutY="19.0" pickOnBounds="true"
+                   preserveRatio="true"/>
+        <Button layoutX="14.0" layoutY="651.0" mnemonicParsing="false" onAction="#load1clicked" text="SSLC Markscard"/>
+        <Button layoutX="141.0" layoutY="651.0" mnemonicParsing="false" onAction="#load2clicked" text="PUC Markscard"/>
+        <Button layoutX="260.0" layoutY="651.0" mnemonicParsing="false" onAction="#load3clicked" text="Student Photo"/>
+    </children>
+</AnchorPane>
